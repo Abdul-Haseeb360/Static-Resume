@@ -1,0 +1,124 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+.resume {
+  max-width: 800px;
+  margin: 20px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.profile-pic {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border: 3px solid #f5f1f1;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+
+
+.chevron {
+  font-size: 30px;
+  color: #262627;
+  cursor: pointer; /* Indicates it's clickable */
+}
+
+.chevron.rotate {
+  transform: rotate(180deg); /* Rotate the chevron when toggled */
+  transition: transform 0.3s; /* Smooth rotation */
+}
+
+.education-content {
+  overflow: hidden; /* Ensures smooth hiding */
+  transition: max-height 0.3s ease; /* Animation for toggle effect */
+}
+.education-content li{
+  padding: 5px;
+}
+
+.education-content.hidden {
+  max-height: 0; /* Collapses the content */
+  padding: 0; /* Optional: Adjust padding when hidden */
+  visibility: hidden; /* Hides the content from the screen */
+}
+
+.skills-content {
+  overflow: hidden; /* Ensures smooth hiding */
+  transition: max-height 0.3s ease; /* Animation for toggle effect */
+  
+}
+
+.skills-content ul {
+  display: flex;
+  flex-wrap: wrap; /* Allows items to wrap to the next line if necessary */
+  gap: 20px; /* Space between each skill */
+  list-style: none; /* Removes bullet points */
+  padding: 0; /* Removes padding from the list */
+  margin: 0; /* Removes margin from the list */
+}
+
+.skills-content ul li {
+  padding: 4px 12px; /* Space inside each skill */
+  background-color: #DBEAFE; /* Light blue background */
+  color: #1E3A8A; /* Dark blue text */
+  border-radius: 9999px; /* Fully rounded corners for pill shape */
+  font-size: 14px; /* Font size for text */
+  white-space: nowrap; /* Prevents text wrapping inside each pill */
+  display: inline-block; /* Ensures each item behaves like an individual box */
+  font-weight: bold;
+}
+
+.skills-content.hidden {
+  max-height: 0; /* Collapses the content */
+  padding: 0; /* Optional: Adjust padding when hidden */
+  visibility: hidden; /* Hides the content from the screen */
+}
+
+
+section {
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #333;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px; 
+}
+
+#toggle-skills{
+  display: block;
+  width: 200px;
+  margin: 20px auto;
+  padding: 10px;
+  font-size: 16px;
+  color: #fff;
+  background: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#toggle-skills:hover {
+  background: #0056b3;
+}
+
+
